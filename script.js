@@ -404,7 +404,7 @@ function canvas2() {
 
     function files(index) {
         var data = `
-        https://thisismagma.com/assets/home/lore/seq/1.webp?2
+https://thisismagma.com/assets/home/lore/seq/1.webp?2
 https://thisismagma.com/assets/home/lore/seq/2.webp?2
 https://thisismagma.com/assets/home/lore/seq/3.webp?2
 https://thisismagma.com/assets/home/lore/seq/4.webp?2
@@ -540,9 +540,6 @@ https://thisismagma.com/assets/home/lore/seq/133.webp?2
 https://thisismagma.com/assets/home/lore/seq/134.webp?2
 https://thisismagma.com/assets/home/lore/seq/135.webp?2
 https://thisismagma.com/assets/home/lore/seq/136.webp?2
-
-
-
  `;
         return data.split("\n")[index];
     }

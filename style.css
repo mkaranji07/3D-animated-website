@@ -28,7 +28,7 @@ body {
 #main {
     position: relative;
     overflow: hidden;
-    background-color: #0F0F17;
+    background-color: #093DCD;
 }
 
 /* PAGE-1 */
@@ -74,7 +74,6 @@ body {
     cursor: pointer;
     z-index: 10;
 }
-
 #right-btns>button:hover {
     border: .5px solid #fff;
 }
@@ -153,6 +152,50 @@ body {
     font-weight: 100;
 }
 
+/* Mediaqueries for Page-1 */
+@media (max-width:600px) {
+    #page-1>nav{
+        padding: 40px 10px;
+    }
+    #page-1>nav>img {
+        width: 17%;
+    }
+
+    #right-btns .dis-none{
+        display: none;
+    }
+
+    #bottom-content {
+        padding: 0 20px;
+        top: 20%!important;
+    }
+    .heading{
+        width: 100%;
+    }
+    .heading>h1 {
+        font-size: 15vw;
+        font-family: A;
+        font-weight: 100;
+        line-height: 1;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .para {
+        width: 100% !important;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .para>p {
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .scroll{
+        display: none;
+    }
+
+}
+
 /* PAGE-2 */
 #page-2 {
     height: 100vh;
@@ -180,6 +223,7 @@ body {
     font-size: 1.1em;
     font-weight: 100;
     margin-bottom: 5vh;
+    color: #ffffffc6;
 }
 
 .section2>h1 {
@@ -189,7 +233,21 @@ body {
     line-height: 12vh;
     color: #dadada69;
 }
-
+/* Mediaqueries for Page-2 */
+@media (max-width:600px) {
+    .section2{
+        padding: 0 5%;
+    }
+    .section2>h1{
+    font-size: 2.5em;
+    line-height: 7vh;
+    }
+    .section2>h2 {
+        font-size: 1em;
+        margin-bottom: 5vh;
+    }
+    
+}
 /* PAGE-3 */
 #page-3 {
     position: relative;
@@ -220,20 +278,38 @@ body {
 }
 
 #page-4>h3 {
-    font-size: 1.1em;
-    color: #fff;
+    font-size: 1.2vw;
+    color: #ffffffc6;
     margin-bottom: 3vh;
     font-weight: 100;
 
 }
 
 #page-4>h1 {
-    font-size: 4em;
+    font-size: 4vw;
     font-weight: 100;
     width: 100%;
     letter-spacing: -2px;
-    line-height: 12vh;
+    line-height: 11vh;
     color: #dadada69;
+}
+/* Mediaqueries Page-4 */
+@media (max-width:600px) {
+    #page-4 {
+        padding: 0 5%;
+    
+    }
+    
+    #page-4>h3 {
+        font-size: 4vw;
+        
+    }
+    
+    #page-4>h1 {
+        font-size: 9vw;
+        line-height: 7vh;
+    }
+    
 }
 
 /* #PAGE-5 */
@@ -250,6 +326,7 @@ body {
     position: relative;
 }
 
+/* Page-6 */
 #page-6 {
     position: relative;
     height: 100vh;
@@ -279,7 +356,22 @@ body {
     line-height: 12vh;
     color: #dadada69;
 }
-
+/* Mediaqueries Page-6 */
+@media (max-width:600px) {
+    #page-6 {
+        padding: 0 5%;
+    }
+    #page-6>h3 {
+        font-size: 1em;
+        margin-bottom: 5vh;
+    }
+    
+    #page-6>h1 {
+        font-size: 3.5em;
+        line-height: 7vh;
+    }
+}
+/* Page-7 */
 #page-7 {
     position: relative;
     height: 100vh;
@@ -292,6 +384,8 @@ body {
     max-width: 100vw;
     position: relative;
 }
+
+
 
 .page-7-cir {
     display: flex;
@@ -316,6 +410,21 @@ body {
     border: 1px solid #fff;
     border-radius: 50%;
 
+}
+/* Page-7 mediaqueries */
+@media (max-width:600px) {
+    .page-7-cir {
+        height: 40vw;
+        width: 40vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .page-7-cir-inner {
+        height: 20vw;
+        width: 20vw;
+    }
 }
 
 #page-8 {
@@ -356,12 +465,12 @@ body {
     font-size: 13px;
     text-transform: uppercase;
 }
-
+/* Page-9 */
 #page-9 {
     display: flex;
     height: 100vh;
     width: 100vw;
-    background-color: #093DCD;
+    background-color: #093DCD
 }
 
 #left-9 {
@@ -393,7 +502,35 @@ body {
     background-image: url(https://thisismagma.com/wp-content/uploads/2023/04/magma.wp2.cubdev.com-home-1.jpeg);
     background-size: cover;
 }
+/* Mediaqueries */
+@media (max-width:600px) {
+    #page-9{
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    #left-9 {
+        width: 100%;
+        height: 50%;
+    }
+    
+    #left-9>h1 {
+        margin-left: 0;
+        font-size: 5em;
+    }
+    
+    #right-9 {
+        height: 65%;
+        width: 100%;
+    }
+    
+    #right-9 .img {
+        height: 65%;
+        width: 100%;
+        
+    }
+}
 
+/* Page-10 */
 #page-10 {
     display: grid;
     height: 100vh;
@@ -417,7 +554,30 @@ body {
     color: #ffffffad;
     font-size: 1.5em;
 }
-
+/* Mediaqueries Page-10*/
+@media (max-width:600px) {
+    #page-10{
+        padding: 0 5%;
+        height: auto;
+    }
+    .content-grid {
+        margin-left: 0;
+        padding-right: 10%;
+        margin-bottom: 50px;
+    }
+    
+    .content-grid>h1 {
+        font-size: 2em;
+    }
+    
+    .content-grid>p {
+        color: #ffffffad;
+        font-size: 2em;
+        line-height: 45px;
+    }
+    
+}
+/* Page-11 */
 #page-11 {
     height: 180vh;
     width: 100vw;
@@ -487,6 +647,7 @@ body {
 .blog-content>h4 {
     font-size: 1em;
     font-weight: 100;
+    color: #504f4ff1;
 }
 
 
@@ -495,6 +656,9 @@ body {
     font-weight: 100;
 }
 
+#blog-btn{
+    height: 20vh;
+}
 
 #blog-btn>button {
     align-items: center;
@@ -506,7 +670,7 @@ body {
     padding: 15px 50px;
     border-radius: 50px;
     color: rgb(36, 118, 249);
-    font-size: 13px;
+    font-size: 18px;
     font-family: C;
     display: flex;
     align-items: center;
@@ -519,14 +683,68 @@ body {
 }
 
 #blog-btn>button>i {
-    font-size: 20px;
+    font-size: 25px;
+}
+/* Mediaqueries Page-11 */
+@media (max-width:600px) {
+    #page-11 {
+        padding: 0 5%;
+        height: auto;
+    }
+    
+    .blog-heading {
+        margin-bottom: 10%;
+    
+    }
+    
+    .blog-heading>h1{
+        font-size: 15vw;
+    }
+    .blogs {
+        flex-direction: column;
+        height: 45vh;
+    }
+    
+    .blog-img {
+        width: 100%;
+        height: 50% ;
+    }
+    
+
+    .blog-content {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .blog-content h4 {
+        font-size: 4vw;
+    }
+    
+    
+    .blog-content h3 {
+        font-size: 5.5vw;
+        margin-bottom: 30px;
+    }
+    
+    #blog-btn>button {
+        bottom: 6%;
+        left: 5%;
+        font-size: 16px;
+        width: 50%;
+        padding: 10px 50px;
+    }
+
+    #blog-btn>button>i {
+        font-size: 20px;
+    }
 }
 
+/* Page-12 */
 #page-12 {
     height: 100vh;
     width: 100vw;
     background-color: #02268E;
-
+    padding: 0 10%;
 }
 
 .page-12-ctn {
@@ -545,14 +763,15 @@ body {
 
 .page-12-ctn>p {
     font-size: 1.2em;
-    color: #ffffff80;
+    font-weight: 100;
+    color: #ffffff84;
 }
 @keyframes slider{
     from{
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
     to{
-        transform: translateX(-100%);
+        transform: translateX(0);
     }
 }
 .slider{
@@ -564,14 +783,48 @@ body {
 .logos{
     display: inline-block;
     padding: 50px 0;
-    animation: 15s slider infinite linear;
+    animation: 30s slider infinite linear;
 }
 
 .slider>.logos>img{
     height: 60px;
     margin: 0 80px;
 }
+/* Mediaqueries Page-12 */
+@media (max-width:600px) {
+    #page-12{
+        padding: 0 5%;
+        height: 80vh;
+        
+    }
+    .page-12-ctn {
+        width: 100%;
+        top: 18%;
+        left: 0;
+    }
+    
+    .page-12-ctn>h1 {
+        font-size: 15vw;
+    }
+    
+    .page-12-ctn>p {
+        font-size: 5vw;
+    }
+   
+    .logos{
+        padding: 50px 0;
+        animation: 30s slider infinite linear;
+    }
 
+    .slider{
+        top: 30%;
+    }
+    .slider>.logos>img{
+        height: 45px;
+    }
+}
+
+/* Page-13 */
 #page-13 {
     height: 80vh;
     width: 100vw;
@@ -604,6 +857,26 @@ body {
 #page-13>button:hover{
     background-color:#2b54ce ;
 }
+/* Mediaqueries Page-13 */
+@media (max-width:600px) {
+    #page-13{
+        height: 70vh;
+    }    
+    #page-13>h1 {
+        font-size: 15vw;
+        left: 5%;
+        top: 30%;
+    }
+
+    #page-13>button {
+        top: 40%;
+        left: 5%;
+    }
+
+    
+}
+
+/* Page-14 */
 #page-14 {
     position: relative;
     height: 90vh;
@@ -652,6 +925,15 @@ body {
 
 .sm-name:hover .hover-effect {
     height: 100%;
+}
+/* Mediaqueries Page-14 */
+@media (max-width:600px) {
+    #page-14 {
+        height: 50vh;
+    }
+    .sm-name>h1 {
+        font-size: 1.3em;
+    }
 }
 
 #footer {
@@ -740,4 +1022,25 @@ body {
     font-weight: 100;
     font-size: .8em;
     bottom: 50px;
+}
+
+/* Mediaqueries Footer */
+@media (max-width:600px) {
+    #footer {
+        flex-direction: column;
+        height: 50vh;
+        width: 100vw;
+        padding: 0 10%;
+    }
+    
+    #footer-nav {
+        margin-top: 20%;
+        width: 100%;
+    }
+
+    #input-right {
+        width: 100%;       
+    }
+
+    
 }
